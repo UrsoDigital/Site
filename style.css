@@ -5,32 +5,42 @@
   text-decoration: none;
   font-family: 'Abril Fatface', cursive;
 }
+html{
+  font-size: 62.5%;
+}
 header{
   display: flex;
-  position: fixed;
-  background-color: #000000;
+  position: absolute;
+  background: linear-gradient( to right, black , black
+  , #1500ff);
   width: 100vw;
   height: 100px;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #070707;
   overflow: hidden;
       }
       a{
         gap: 5px;
-        color: rgb(98, 0, 255);
+        color: rgb(255, 255, 255);
         text-decoration: none;
-        transform: scale(1.2);  
         cursor: pointer;
-      }
+      }  
       .links{
         display: flex;
         flex-direction: row;
         gap: 40px;
-        font-size: 12pt;
+        font-size: 1.6rem;
+        cursor: pointer;
+        padding-left: 600px;
       }
+      .links a:hover{
+        color: #6f00ff;  
+            }
       header img{
-        padding: 10px;
+        position: absolute;
+        top: 5%;
+        left: 10%;
         border-radius: 50px;
         filter: contrast(1.4);
         cursor: pointer;
@@ -39,7 +49,7 @@ header{
         transform: scale(1.2);  
         cursor: pointer;
       }
-.principal{
+.primaria{
   overflow: hidden;
   background-color: #ffffff;
   display: flex;
@@ -51,15 +61,82 @@ header{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+      #backpag1{
+        background-image:url(imagens/Ursop1.png) no-repeat;
+        text-align: right;
+        height: 700px;
+        padding-top: 135px;
+        width: 100%;
+        padding-right: 1px;
+        
+        overflow: visible;
       }
-      h1{
-        font-size: 45pt;
+      .primaria h1{
+        font-size: 4.8rem;
+        color: #000000;
+      }
+      .primaria p{
+        font-family: Arial, Helvetica, sans-serif;
+        color:#000000;
+        font-size: 3.2rem;
       }
       .textopag1{
         position: absolute;
         left: 10%;
       }
-.container {
+.segunda{
+  overflow: hidden;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  border-bottom: 1px solid #000000;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+      .segunda h1{
+        font-size: 3.2rem;
+        color: #000000;
+      }
+      .segunda p{
+        color: #000000;
+        font-size: 16pt;
+      }
+      .textopag2{
+        position: absolute;
+        left: 10%;
+      }
+      .btnSaibaMais{ 
+      font-size: 1.5rem;
+      background: linear-gradient( to right, rgb(252, 252, 252) , rgb(255, 255, 255)
+        , #1500ff);
+      width: 150px;
+      height: 50px;
+      border-radius: 20px;
+      border: none;
+
+      }
+      .btnSaibaMais:hover{
+        background: linear-gradient( to right, rgb(0, 119, 255) , #1500ff
+        , rgb(0, 119, 255));
+        color: #ffffff
+        font-size: 2rem;
+      }
+      #backpag2{
+        background-image:url(imagens/Bussines.jpg) right no-repeat;
+        text-align: right;
+        height: 700px;
+        width: 100%;
+        align-items: flex-end;
+        
+      }
+
+.quarta {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -76,7 +153,7 @@ header{
         position: relative;
       }
       .border:hover{
-          border: 1px solid white;
+          border: 1px solid #1500ff;
       }
       .card{
         height: 379px;
@@ -110,12 +187,13 @@ header{
           background-size: 400px;
       }
       .card2{
-        background: url('./imagens/Jean.JPG') center center no-repeat;
-        background-size: 300px
+        background: url('./imagens/Side.JPG') center center no-repeat;
+        background-size: 300px;
+        filter: grayscale(0.5);
       }
       .card2:hover{
-          background: url('./imagens/Jean.JPG')  center no-repeat;
-          background-size: 600px;
+          background: url('./imagens/Side.JPG')   left top no-repeat;
+          background-size: 350px;
       }
       h2{
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -124,3 +202,10 @@ header{
         opacity: 0;
         transition: opacity 1s;
       }
+.footer2 {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    font-size: 12pt;
+}
